@@ -1,17 +1,5 @@
 
-<%= s3_uploader_form post: post_url, as: "model[image_url]", id: "myS3Uploader" do %>
-  <%= file_field_tag :file, multiple: true %>
-<% end %>
-
-<script id="template-upload" type="text/x-tmpl">
-<div class="upload">
-  {%=o.name%}
-  <div class="progress"><div class="bar" style="width: 0%"></div></div>
-</div>
-</script>
-
-
-   <!-- <%= simple_form_for @post, html: { multipart: true } do |f| %>
+   <%= simple_form_for @post, html: { multipart: true } do |f| %>
    <% if @post.errors.any? %>
 
    <div id="errors">
@@ -34,4 +22,4 @@
 
      <%= f.button :submit, class: 'btn btn-primary' %>
    </div>
-   <% end %> -->
+   <% end %>
