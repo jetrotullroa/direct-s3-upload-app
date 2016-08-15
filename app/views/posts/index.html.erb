@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <h1 class="text-center">IMAGES</h1>
+
+  <div class="post-container">
+    <% @posts.each do |post| %>
+    <ul class="post-loop text-center">
+      <%= link_to(post) do %>
+        <div class="post-content">
+          <li><%=  image_tag post.image.url(:medium) %></li>
+          <li><h2><%= post.title %><h2></li>
+          <li><p><%= post.description %></p></li>
+        </div>
+      <% end %>
+    </ul>
+
+    <% end %>
+  </div>
+
+</div>

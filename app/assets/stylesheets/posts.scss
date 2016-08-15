@@ -1,0 +1,56 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// GLOBAL
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a:hover h2,
+a:hover p {
+  color: #000;
+}
+// BODY
+
+// INDEX
+
+.post-container {
+    position: relative;
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+
+    .post-loop {
+      position: relative;
+      width: 28.33%;
+      border: 2px solid #666;
+      padding: 10px;
+      margin: 0 2.5%;
+
+      img {
+        min-width: 300px;
+        height: auto;
+      }
+
+    }
+}
+
+
+
+// FOOTER
+.navbar-fixed-bottom {
+  position: relative;
+  bottom: 0;
+  border-width: 1px 0 0;
+}
